@@ -5,4 +5,14 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>tools-advance</name>
   <description>just jocking around		</description>
+  	<properties>
+		<java.version>17</java.version>
+	</properties>
+  <dependencies>
+	  <dependency>
+		  <groupId>org.projectlombok</groupId>
+	  <artifactId>lombok</artifactId>
+	  <version>1.18.26</version>
+	  </dependency>
+  </dependencies>
 </project>

@@ -33,12 +33,11 @@ public class Strings {
 		int longest = 0;
 		List<Integer> temp = new ArrayList<>();
 		for (char letter : s.toCharArray()) {
-			int letterI = (int) letter;
+			int letterI =  letter;
 			if (!temp.contains(letterI)) {
 				temp.add(letterI);
 			} else {
 				longest = Math.max(temp.size(), longest);
-				//temp.clear();
 				while (temp.contains(letterI)) {
 					temp.remove(0);
 				}
@@ -48,6 +47,8 @@ public class Strings {
 		longest = Math.max(temp.size(), longest);
 		return longest;
 	}
+	
+	
 
 	public char findTheDifferenceII(String s, String t) {
 		int result = 0;
